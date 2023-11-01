@@ -21,11 +21,11 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
           userLimitCount={userLimitCount}
           isProPlan={false}
           className={cn(
-            "fixed left-0 z-20 w-80 hidden [&:has([is-navbar-minimal]):w-fit",
+            "fixed left-0 z-20 w-80 hidden [&:has([is-navbar-minimal])]:w-fit",
             "lg:block"
           )}
         />
-        <MobileSidebar isProPlan={isProPlan} userLimitCount={0} />
+        <MobileSidebar isProPlan={isProPlan} userLimitcount={0} />
         <UpgradeProModal isProPlan={isProPlan} />
         <div
           className={cn(
